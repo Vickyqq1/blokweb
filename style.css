@@ -50,7 +50,7 @@ p {
 /* header */
 header img {
   max-width: 100%;
-  height: 5em;
+  height: 2em;
 }
 
 img {
@@ -58,24 +58,6 @@ img {
 }
 
 header {
-  position: relative;
-  width: 100%;
-  height: 70vh;
-  overflow: hidden;
-}
-
-/* Video achter alles */
-header video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-}
-
-.header-text {
   position: absolute;
   top: 0;
   left: 0;
@@ -89,6 +71,22 @@ header video {
   color: white;
   z-index: 2; 
 }
+
+/* Video achter alles */
+main video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+
 
 header li{
   text-decoration: none;
@@ -152,6 +150,8 @@ main > p {
   margin-left: .5em;
 }
 
+
+
 /* Artikelen */
 
 main ul li a {
@@ -177,6 +177,10 @@ main ul li {
   gap: 1rem;
   border-radius: 3em;
   padding: 1em 2em; 
+}
+
+main ul li:hover {
+  color:white;
 }
 
 main ul {
