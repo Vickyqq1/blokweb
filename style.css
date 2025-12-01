@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "FontNormal";
+  src: url("font/3d06f48d47675056-s.p.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FontItalic";
+  src: url("font/14609c67e54d6f4d-s.p.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "FontDun";
+  src: url("font/ba4d75f8b214c7cd-s.p.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "FontSuperDun";
+  src: url("font/4cca2f169119d46e-s.p.woff2") format("woff2");
+  font-weight: thin;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FontBold";
+  src: url("font/6e96e3e836b49e60-s.p.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+h1,h2 {
+  font-family: "FontBold", sans-serif;
+}
+
+p {
+  font-family: "FontNormal", sans-serif ;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  gap: 0;
+}
+
+/* header */
+header img {
+  max-width: 100%;
+  height: 5em;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+/* Video achter alles */
+header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.header-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: #ffb7ce;
+  color: white;
+  z-index: 2; 
+}
+
+header li{
+  text-decoration: none;
+  color: black;
+  border-radius: 0.3em;
+}
+
+/* ---- NAVIGATIE ---- */
+header nav {
+  display: none; 
+  background: white;
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+header nav.toonMenu {
+  display: block;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 1em;               /* ruimte tussen de items */
+  
+}
+
+header nav li a {
+  text-decoration: none;
+  color: black;
+  border-radius: 0.3em;
+  font-family: "FontBold", sans-serif;
+  
+}
+
+header nav li a:hover {
+  color:#ffb7ce ;
+}
+
+/* Sluit-knop */
+header nav button {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* main */
+
+main h1 {
+  font-weight: bold;
+}
+
+main > p {
+  background-color: #ffb7ce;
+  padding:.4em;
+  border-radius: .5em;
+  width: max-content;
+  margin: 2em 0;
+  margin-left: .5em;
+}
+
+/* Artikelen */
+
+main ul li a {
+  text-decoration: none;
+  color: black;          
+  font-family: "FontSuperDun", sans-serif;
+  font-size: small;
+  border-width: .1em;
+  border-style: solid;
+  border-radius: .5em;
+  padding: .2em;
+  transition: color 0.3s ease;
+}
+
+main ul li:hover a {
+  color: white; 
+}
+
+main ul li {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 3em;
+  padding: 1em 2em; 
+}
+
+main ul {
+  display: grid;
+  justify-content: center;
+  padding: 0;
+  gap: 2em; 
+}
+
+/* hover kleuren per li */
+li:first-of-type:hover {
+  background-color: #5b4849;
+}
+li:nth-of-type(2):hover {
+  background-color: #43271d;
+}
+li:nth-of-type(3):hover {
+  background-color: #ffe550;
+}
+li:nth-of-type(4):hover {
+  background-color: #c69782;
+}
+li:nth-of-type(5):hover {
+  background-color: #c69782;
+}
+li:nth-of-type(6):hover {
+  background-color: #876192;
+}
+li:nth-of-type(7):hover {
+  background-color: #c69782;
+}
