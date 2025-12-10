@@ -1,17 +1,11 @@
-var btn = document.querySelector('button');
-var nav = document.querySelector('nav');
-var closeButton = document.querySelector('nav button');
+var openBtn = document.getElementById('openMenu');
+var closeBtn = document.getElementById('closeMenu');
+var menu = document.querySelector('header nav ul');
 
-btn.onclick = doeIets;
-closeButton.onclick = sluit;
-
-
-function doeIets() {
-    nav.classList.add('toonMenu');
+openBtn.onclick = function() {
+    menu.classList.add('active');
 }
 
-function sluit() {
-    console.log('hallo');
-    nav.classList.remove('toonMenu')
+closeBtn.onclick = function() {
+    menu.classList.remove('active');
 }
-
