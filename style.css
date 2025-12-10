@@ -1,3 +1,4 @@
+/* Algemeen*/
 @font-face {
   font-family: "FontNormal";
   src: url("font/3d06f48d47675056-s.p.woff2") format("woff2");
@@ -31,33 +32,300 @@
   font-style: normal;
 }
 
-h1,h2 {
-  font-family: "FontBold", sans-serif;
+/*lettertype toepassen op mijn pagina*/
+h1,
+h2,
+h3 {
+  font-family: "FontNormal", sans-serif;
 }
 
 p {
-  font-family: "FontNormal", sans-serif ;
+  font-family: "FontNormal", sans-serif;
 }
 
+details li {
+  font-family: "FontBold", sans-serif;
+}
+
+summary {
+  font-family: "FontNormal", sans-serif;
+}
+
+ul {
+  font-family: "FontBold", sans-serif;
+}
+
+a {
+  font-family: "FontBold", sans-serif;
+}
+
+/* alle elementen altijd op dezelfde manier beginnen*/
+*,
 *::after,
 *::before {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  gap: 0;
 }
 
-/* header */
-header img {
+/* header img */
+.pagina1 img {
+  max-width: 100%; /*zorgt ervoor dat me img op pagina 1 de goede */
+}
+
+.pagina1 header img {
   max-width: 100%;
   height: 2em;
 }
 
-img {
+/* header header */
+.pagina1 header {
+  position: absolute;
+  width: 100%; /*elementen pakken volledige breedte*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em; /*padding tussen boven en onderkant*/
+  background-color: #ffb7ce;
+  color: white;
+  z-index: 2;
+}
+
+/*Order now button*/
+.pagina1 header > a:last-of-type {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border-radius: 0.5em;
+  padding: 0.3em;
+}
+
+/* Video achter alles */
+.pagina1 main video {
+  position: absolute;
+  object-fit: cover; /*vult de volledige container*/
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden; /*zorgt dat alles buiten vp afgeknipt word*/
+}
+
+.pagina1 header li {
+  text-decoration: none;
+  color: black;
+  border-radius: 0.3em;
+}
+
+/* Navigatie */
+.pagina1 header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  position: fixed; /*blijft op dezelfde plek*/
+  top: 0;
+  left: 0;
+  height: 100vh; /*neemr hele lengte van de pagina in*/
+  background-color: white;
+  transform: translateX(-100%); /*verstopt menu*/
+  transition: transform 0.4s ease; /*menu schuift terug in 0.4sec*/
+  z-index: 100;
+}
+
+.pagina1 header nav ul.active {
+  transform: translateX(0); /*maakt het menu zichtbaar*/
+}
+
+/*button in de nav*/
+.pagina1 header nav ul button {
+  align-self: flex-end; /*zet de knop rechts eind*/
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.pagina1 header nav li a {
+  text-decoration: none;
+  color: black;
+  border-radius: 0.3em;
+  font-family: "FontBold", sans-serif;
+}
+
+.pagina1 header nav li a:hover {
+  color: #ffb7ce;
+}
+
+/* main */
+.pagina1 main h1 {
+  font-weight: bold;
+}
+
+.pagina1 main > p {
+  background-color: #ffb7ce;
+  padding: 0.4em;
+  border-radius: 0.5em;
+  width: max-content; /*background om de content*/
+  margin: 2em 0;
+  margin-left: 0.5em;
+}
+
+/* Artikelen */
+.pagina1 main ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "FontSuperDun", sans-serif;
+  font-size: small;
+  border-width: 0.1em;
+  border-style: solid;
+  border-radius: 0.5em;
+  padding: 0.2em;
+}
+
+.pagina1 main section p {
+  margin: 1em 0;
+}
+
+.pagina1 main ul li:hover a {
+  color: white;
+}
+
+.pagina1 main ul li {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 3em;
+  padding: 1em 2em;
+}
+
+.pagina1 main ul li:hover {
+  color: white;
+}
+
+.pagina1 main ul {
+  padding: 0;
+  gap: 2em;
+  padding-bottom: 2em;
+}
+
+/* hover kleuren per li */
+.pagina1 > main ul li:first-of-type:hover {
+  background-color: #5b4849;
+}
+.pagina1 > main ul li:nth-of-type(2):hover {
+  background-color: #43271d;
+}
+.pagina1 > main ul li:nth-of-type(3):hover {
+  background-color: #ffe550;
+}
+.pagina1 > main ul li:nth-of-type(4):hover {
+  background-color: #c69782;
+}
+.pagina1 > main ul li:nth-of-type(5):hover {
+  background-color: #c69782;
+}
+.pagina1 > main ul li:nth-of-type(6):hover {
+  background-color: #876192;
+}
+.pagina1 > main ul li:nth-of-type(7):hover {
+  background-color: #c69782;
+}
+
+/*laatste section*/
+.pagina1 main > section:last-of-type {
+  background-color: black;
+  padding: 1em;
+  border-radius: 0.5em;
+  text-align: center;
+}
+
+.pagina1 main > section:last-of-type h2 {
+  color: white;
+}
+
+.pagina1 main > section:last-of-type p {
+  color: white;
+}
+
+.pagina1 main > section:last-of-type a {
+  color: black;
+  text-decoration: none;
+  background-color: #ffb7ce;
+  border-radius: 0.5em;
+  padding: 0.2em;
+}
+
+.pagina1 div {
+  border: 2px solid #ffb7ce;
+  padding: 2em;
+}
+
+/* footer */
+.pagina1 footer {
+  border-top: 0.1em solid #ffb7ce;
+  margin-top: 1em;
+}
+
+.pagina1 footer summary {
+  padding-left: 2.3em;
+  padding-top: 2em;
+}
+
+.pagina1 footer details ul li {
+  list-style: none;
+}
+
+.pagina1 footer div {
+  background-color: #ffb7ce;
+  padding: 1.5em;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+
+.pagina1 footer div h3 {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  width: 20em;
+  text-align: center;
+  padding: 0.4em 0;
+  border-radius: 1em;
+}
+
+/* pagina 2*/
+
+/*header*/
+.pagina2 {
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.pagina2 header > img {
+  max-width: 100%;
+  height: 2em;
+}
+
+.pagina2 img {
   max-width: 100%;
 }
 
-header {
+.pagina2 header > a:last-of-type {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border-radius: 0.5em;
+  padding: 0.3em;
+}
+
+.pagina2 header {
   position: absolute;
   top: 0;
   left: 0;
@@ -69,65 +337,17 @@ header {
   padding: 1em 2em;
   background-color: #ffb7ce;
   color: white;
-  z-index: 2; 
+  z-index: 2;
 }
 
-/* Video achter alles */
-main video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-  position: relative;
-  width: 100%;
-  height: 70vh;
-  overflow: hidden;
-}
-
-
-header li{
+.pagina2 header li {
   text-decoration: none;
   color: black;
   border-radius: 0.3em;
-}
-
-/* ---- NAVIGATIE ---- */
-header nav {
-  display: none; 
-  background: white;
-  padding: 1em;
-  border-radius: 0.5em;
-}
-
-header nav.toonMenu {
-  display: block;
-}
-
-header nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  gap: 1em;               /* ruimte tussen de items */
-  
-}
-
-header nav li a {
-  text-decoration: none;
-  color: black;
-  border-radius: 0.3em;
-  font-family: "FontBold", sans-serif;
-  
-}
-
-header nav li a:hover {
-  color:#ffb7ce ;
 }
 
 /* Sluit-knop */
-header nav button {
+.pagina2 header nav button {
   background: none;
   border: none;
   color: black;
@@ -135,80 +355,261 @@ header nav button {
   cursor: pointer;
 }
 
-/* main */
-
-main h1 {
-  font-weight: bold;
-}
-
-main > p {
-  background-color: #ffb7ce;
-  padding:.4em;
-  border-radius: .5em;
-  width: max-content;
-  margin: 2em 0;
-  margin-left: .5em;
-}
-
-
-
-/* Artikelen */
-
-main ul li a {
+.pagina2 header li {
   text-decoration: none;
-  color: black;          
-  font-family: "FontSuperDun", sans-serif;
-  font-size: small;
-  border-width: .1em;
-  border-style: solid;
-  border-radius: .5em;
-  padding: .2em;
-  transition: color 0.3s ease;
+  color: black;
+  border-radius: 0.3em;
 }
 
-main ul li:hover a {
-  color: white; 
-}
-
-main ul li {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  align-items: center;
-  gap: 1rem;
-  border-radius: 3em;
-  padding: 1em 2em; 
-}
-
-main ul li:hover {
-  color:white;
-}
-
-main ul {
-  display: grid;
-  justify-content: center;
+/*navigatie*/
+.pagina2 header nav {
+  background: none;
   padding: 0;
-  gap: 2em; 
+  border-radius: 0.5em;
 }
 
-/* hover kleuren per li */
-li:first-of-type:hover {
-  background-color: #5b4849;
+.pagina2 header nav.toonMenu {
+  display: block;
 }
-li:nth-of-type(2):hover {
+
+.pagina2 header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: white;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+  z-index: 100;
+}
+
+/*animatie*/
+.pagina2 header nav ul.active {
+  transform: translateX(0);
+}
+
+.pagina2 header nav ul button {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.pagina2 header nav li a {
+  text-decoration: none;
+  color: black;
+  border-radius: 0.3em;
+  font-family: "FontBold", sans-serif;
+}
+
+.pagina2 header nav li a:hover {
+  color: #ffb7ce;
+}
+
+/*main*/
+.pagina2 main > section {
   background-color: #43271d;
+  padding-left: 2em;
+  padding-top: 1em;
 }
-li:nth-of-type(3):hover {
-  background-color: #ffe550;
+
+.pagina2 > section {
+  padding-left: 2em;
 }
-li:nth-of-type(4):hover {
-  background-color: #c69782;
+
+.pagina2 main > section > img {
+  width: 18.7em;
+  height: auto;
 }
-li:nth-of-type(5):hover {
-  background-color: #c69782;
+
+/*letters en spacing*/
+.pagina2 main > section > article {
+  display: flex;
+  flex-direction: column;
+  gap: 1em; /* mooie verticale spacing */
+  max-width: 28.1em;
+  color: white;
+  padding-bottom: 2em;
 }
-li:nth-of-type(6):hover {
-  background-color: #876192;
+
+/*order now*/
+.pagina2 section article ul li:first-child a {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  padding: 0.6em;
+  border-radius: 2em;
+  display: block;
+  margin: 0.5em;
+  text-align: center;
 }
-li:nth-of-type(7):hover {
-  background-color: #c69782;
+
+.pagina2 section:nth-of-type(1) article ul li:hover a {
+  color: black;
+  background-color: white;
+  border-radius: 2em;
+}
+
+/*hartje*/
+.pagina2 section article ul li:nth-child(2) a {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  padding: 0.6em;
+  border-radius: 2em;
+  display: block;
+  text-align: center;
+}
+
+/*hartje animatie bron codepen animatie*/
+@keyframes hartslag-animation {
+  0% {
+    transform: scale(1);
+  }
+  5% {
+    transform: scale(0.7);
+  }
+  10% {
+    transform: scale(1.5);
+  }
+  15% {
+    transform: scale(0.7);
+  }
+  20% {
+    transform: scale(1.5);
+  }
+  25% {
+    transform: scale(0.7);
+  }
+  30% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Alleen het hartje met aria-label="hartslag" animeert bij hover */
+li[aria-label="hartslag"]:hover a {
+  animation-name: hartslag-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+
+/* reviews*/
+.pagina2 ul {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /*responsive voor groter scherm*/
+  gap: 1rem;
+  list-style: none;
+  text-decoration: none;
+}
+
+.pagina2 blockquote:hover {
+  background-color: #ffb7ce;
+}
+
+.pagina2 section:nth-of-type(1) article ul li:hover {
+  background-color: white;
+  border-radius: 2em;
+}
+
+/*link in eerste section*/
+.pagina2 section:nth-of-type(1) article ul li a {
+  color: white;
+  background-color: transparent;
+  border-radius: 2em;
+}
+
+.pagina2 blockquote {
+  width: 15.625em; /* vaste breedte  */
+  height: 11.25em; /* vaste hoogte */
+  display: flex; /*content in blok*/
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.2em;
+  background: white;
+  border-radius: 1.2em;
+  border: 0.125em solid #000;
+  box-shadow: 0.375em 0.375em 0 #000;
+  margin: 2em auto; /*midden*/
+}
+
+/*Laatste section*/
+
+/*plaatjes*/
+.pagina2 section:nth-of-type(2) article ul {
+  display: flex;
+  gap: 1em;
+  flex-direction: row;
+}
+
+/*rondjes*/
+.pagina2 section:nth-of-type(2) article ul li {
+  height: 3em;
+  aspect-ratio: 1; /*1 op 1 verhouding*/
+  background: red;
+  border-radius: 50%;
+  overflow: hidden; /*alles buiten cirkel word uitgeknipt*/
+}
+
+.pagina2 main section:last-of-type {
+  color: white;
+}
+
+main section:nth-of-type(2) section button {
+  all: unset;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  border: 0.1em solid white;
+  border-radius: 1em;
+  font-family: "FontNormal";
+}
+
+/*footer*/
+.pagina2 footer {
+  border-top: 0.1em solid #ffb7ce;
+  margin-top: 1em;
+}
+
+.pagina2 footer summary {
+  padding-left: 2.3em;
+  padding-top: 2em;
+}
+
+.pagina2 footer details ul li {
+  list-style: none;
+}
+
+.pagina2 footer section {
+  background-color: #ffb7ce;
+  padding: 1.5em;
+  margin-top: 1em;
+}
+
+.pagina2 footer section {
+  text-align: center;
+}
+
+.pagina2 footer section h3 {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  width: 20em;
+  text-align: center;
+  padding: 0.4em 0;
+  border-radius: 1em;
 }
