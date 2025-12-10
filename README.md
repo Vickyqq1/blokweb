@@ -202,19 +202,17 @@ tijdens dit gesprek had ik al veel van me css af kwa kleur en hovers. ik had het
 
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| -------------- | ------------------ | ------------ | ---------------- |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+mijn groepje had weinig vragen over alles dus hebben niet veel feedback gekregen
+
+feedback (victoria)
+css selectors specifieker maken
 
 ### Verslag van meeting
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
 - er zijn andere opties inplaats van sections en articles
-- punt 2
--
+- css selectors specifieker maken
 
 </details>
 
@@ -225,7 +223,11 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Bevindingen
 
-Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+ik heb voor mijn eigen sote gekeken hoe toegangkelijk het was 
+
+<img src="readme-images/checklist.png" width="375px" alt="checklist screenreader">
+<img src="readme-images/checklist2.png" width="375px" alt="checklist screenreader">
+
 
 </details>
 
@@ -332,11 +334,11 @@ Nb. ChatGpT en andere AI horen er ook bij.
 Nb. Vermeld de bronnen ook in je code.
 
 1. De oefeningen van code pen die we in de les hebben gekregen
+- https://codepen.io/shooft/pen/myepoJo voor java
+- https://codepen.io/shooft/pen/jEbKzoO animatie
 2. Hulp van studentassistenten David, Maya
 3. Eigen notities uit de les
 4. alle fotos en tekst in mijn site (https://crumblcookies.com)
 
 </details>
-
-
 </details>
