@@ -9,11 +9,12 @@
 
 </head>
 
-<body>
+<body class="pagina1">
     <header>
-        <nav>
+        <button id="openMenu" aria-label="open navigation menu">☰</button>
+        <nav aria-label="main navigation">
             <ul>
-                <button>close</button>
+                <button id="closeMenu" aria-label="close navigation menu">x</button>
                 <li><a href="">Sign in</a></li>
                 <li><a href="">Home</a></li>
                 <li><a href="#">Order</a></li>
@@ -23,15 +24,14 @@
                 <li><a href="#">Merch</a></li>
             </ul>
         </nav>
-        <button>open</button>
-        <img src="foto/crumbl.logo.png" alt="crumble cookie logo">
-        <a href="#">Order now</a>
 
+        <img src="foto/crumbl.logo.png" alt="crumble cookie logo">
+        <a href="#" aria-label="order your cookies now">Order now</a>
     </header>
 
     <main>
         <figure>
-            <video autoplay loop muted playsinline>
+            <video autoplay loop muted playsinline aria-label="promotional video showing crumbl cookies">
                 <source src="video/promo.video.mp4" type="video/mp4">
             </video>
         </figure>
@@ -40,91 +40,113 @@
 
         <h1>National Flavors</h1>
 
-        <ul>
-            <li>
-                <img src="foto/oreo.cookie.png" alt="Cookies & Cream Tres Leches Cake">
-                <section>
-                    <h2>Cookies & Cream Tres Leches Cake</h2>
-                    <p>Een zachte vanillecake gedrenkt in tres leches en belegd met slagroom en cookies &amp; cream
-                        kruimels.</p>
-                    <a href="informatie.html">Learn more</a>
-                </section>
-            </li>
+        <section aria-label="national-flavors-heading">
+            <ul>
+                <li>
+                    <img src="foto/oreo.cookie.png" alt="Cookies & Cream Tres Leches Cake">
+                    <article>
+                        <h2>Cookies & Cream Tres Leches Cake</h2>
+                        <p>A soft vanilla cake soaked in tres leches and topped with whipped cream and cookies & cream
+                            crumbs.</p>
+                        <a href="informatie.html" aria-label="learn more about the Cookies & Cream Tres Leches Cake">Learn more</a>
+                    </article>
+                </li>
 
-            <li>
-                <section>
-                    <h2>Double Fudge Brownie Cookie</h2>
-                    <p>Een rijke chocoladedeegcookie gevuld met fudge.</p>
-                    <a href="informatie.html">Learn more</a>
-                </section>
+                <li>
+                    <article>
+                        <h2>Double Fudge Brownie Cookie</h2>
+                        <p>A rich chocolate cookie dough filled with fudge.</p>
+                        <a href="informatie.html" aria-label="learn more about the Double Fudge Brownie Cookie">Learn more</a>
+                    </article>
+                  <img src="foto/choco.cookie.png " alt="Double Fudge Brownie Cookie">
+                </li>
 
-                <img src="foto/choco.cookie.png" alt="Double Fudge Brownie Cookie">
+                <li>
+                    <img src="foto/cookie.cup.png" alt="Banana Pudding">
+                    <article>
+                        <h2>Banana Pudding</h2>
+                        <p>Creamy banana pudding in dessert form..</p>
+                        <a href="informatie.html" aria-label="learn more about the Banana Pudding">Learn more</a>
+                    </article>
+                </li>
 
+                <li>
+                    <article>
+                        <h2>Peanut Butter Cup ft. REESE'S</h2>
+                        <p>A warm peanut butter cookie topped with REESE'S pieces.</p>
+                        <a href="informatie.html" aria-label="learn more about the Peanut Butter Cup ft. REESE'S">Learn more</a>
+                    </article>
+                    <img src="foto/reeses.cookie.png" alt="Peanut Butter Cup Skillet Cookie">
+                </li>
 
-            </li>
+                <li>
+                    <img src="foto/glazed.cookie.png" alt="Iced Oatmeal Cookie">
+                    <article>
+                        <h2>Iced Oatmeal Cookie</h2>
+                        <p>A classic oatmeal cookie with icing.</p>
+                        <a href="informatie.html" aria-label="learn more about the Iced Oatmeal Cookie">Learn more</a>
+                    </article>
+                </li>
 
-            <li>
-                <img src="foto/cookie.cup.png" alt="Banana Pudding">
-                <section>
-                    <h2>Banana Pudding</h2>
-                    <p>Romige bananenpudding in dessertvorm.</p>
-                    <a href="informatie.html">Learn more</a>
-                </section>
-            </li>
+                <li>
+                    <article>
+                        <h2>Blueberry Pancake Cookie</h2>
+                        <p>A cookie with blueberries and pancake flavors..</p>
+                        <a href="informatie.html" aria-label="learn more about the Blueberry Pancake Cookie">Learn more</a>
+                    </article>
+                    <img src="foto/blueberry.cookie.png" alt="Blueberry Pancake Cookie">
+                </li>
 
-            <li>
-                <section>
-                    <h2>Peanut Butter Cup ft. REESE'S</h2>
-                    <p>Een warme pindakaascookie belegd met REESE'S stukjes.</p>
-                    <a href="informatie.html">Learn more</a>
-                </section>
+                <li>
+                    <img src="foto/chocochip.cookie.png" alt="Milk Chocolate Chip Cookie">
+                    <article>
+                        <h2>Milk Chocolate Chip Cookie</h2>
+                        <p>A classic cookie with milk chocolate chips..</p>
+                        <a href="informatie.html" aria-label="learn more about the Milk Chocolate Chip Cookie">Learn more</a>
+                    </article>
+                </li>
 
-                <img src="foto/reeses.cookie.png" alt="Peanut Butter Cup Skillet Cookie">
+            </ul>
+        </section>
 
-            </li>
-
-            <li>
-
-                <img src="foto/glazed.cookie.png" alt="Iced Oatmeal Cookie">
-                <section>
-                    <h2>Iced Oatmeal Cookie</h2>
-                    <p>Een klassieke havermoutcookie met glazuur.</p>
-                    <a href="informatie.html">Learn more</a>
-                </section>
-            </li>
-
-            <li>
-                <section>
-                    <h2>Blueberry Pancake Cookie</h2>
-                    <p>Een cookie met blauwe bessen en pannukoeksmaken.</p>
-                    <a href="informatie.html">Learn more</a>
-                </section>
-
-                <img src="foto/blueberry.cookie.png" alt="Blueberry Pancake Cookie">
-
-            </li>
-
-            <li>
-
-                <img src="foto/chocochip.cookie.png" alt="Milk Chocolate Chip Cookie">
-                <section>
-                    <h2>Milk Chocolate Chip Cookie</h2>
-                    <p>Een klassieke cookie met melkchocoladestukjes.</p>
-                    <a href="informatie.html">Learn more</a>
-                </section>
-            </li>
-
-        </ul>
-
-        <section>
-            <h2>New Weekly Secret Menu</h2>
-            <p>Ontdek de nieuwe selectie iedere week.</p>
+        <section aria-label="weekly secret menu">
+            <div>
+                <h2>New Weekly Secret Menu</h2>
+                <p>Discover the new selection every week</p>
+                <a href="#">Go to secret menu</a>
+            </div>
         </section>
 
     </main>
 
     <footer>
-        <p>Crumbl Cookies</p>
+        <details>
+            <summary aria-label="company information list">Company</summary>
+            <ul>
+                <li>Order</li>
+                <li>Our story</li>
+                <li>Rewards</li>
+                <li>Nutrition & Allergy</li>
+                <li>Support</li>
+                <li>Gift Card Balance</li>
+            </ul>
+        </details>
+
+        <details>
+            <summary aria-label="get involved information list">Get involved</summary>
+            <ul>
+                <li>Press</li>
+                <li>Collaborate</li>
+                <li>Franchising</li>
+                <li>HQ Careers</li>
+            </ul>
+        </details>
+
+        <div>
+            <H3>Order now</H3>
+        </div>
+
+
     </footer>
     <script src="javascript.js"></script>
 </body>
