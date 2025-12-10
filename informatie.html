@@ -8,97 +8,116 @@
     <link href="style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="pagina2">
     <header>
+        <button id="openMenu" aria-label="open navigation menu">☰</button>
         <nav>
-            <button type="button">Menu</button>
-            <button type="button">Order Now</button>
+            <ul>
+                <button id="closeMenu" aria-label="close navigation menu">x</button>
+                <li><a href="">Sign in</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="#">Order</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Catering</a></li>
+                <li><a href="#">Gift Cards</a></li>
+                <li><a href="#">Merch</a></li>
+            </ul>
         </nav>
+
+        <img src="foto/crumbl.logo.png" alt="crumble cookie logo">
+        <a href="#" aria-label="order your cookies now">Order now</a>
+
     </header>
 
     <main>
-
-        <section>
-            <figure>
-                <img src="foto/voorkant.cookie.png" alt="Milk chocolate chip cookie">
-            </figure>
+        <section aria-label="cookie-main-heading">
+            <img src="foto/voorkant.cookie.png" alt="Milk chocolate chip cookie">
 
             <article>
                 <p>Served Warm</p>
                 <h1>Milk Chocolate Chip Cookie</h1>
                 <p>The classic—you cant go wrong. Thick, soft, and packed with milk chocolate chips.</p>
 
-                <button type="button">Order Now</button>
-                <button type="button">Add To Favorites</button>
+                <ul>
+                    <li><a href="#" aria-label="order this Milk Chocolate Chip Cookie">Order now</a></li>
+                    <li aria-label="hartslag" aria-label="add this cookie to favorites"><a href="#">❤️</a></li>
+                </ul>
 
-                <p>
+                <p aria-label="customer rating">
                     ★★★★★
                     <span>4.58 avg rating | 770,515 reviews</span>
                 </p>
             </article>
         </section>
 
-        <section>
-            <h2>Top reviews</h2>
-            <p>Based on the highest number of upvotes</p>
+        <h2>Top reviews</h2>
 
-            <blockquote>
-                <p>Simple. Elegant. Classic. This cookie is a staple in any cookie lover's top 10!</p>
-                <footer>— Madison B.</footer>
-            </blockquote>
+        <ul aria-label="top-reviews">
+            <li>
+                <blockquote>
+                    <p>Simple. Elegant. top 10!</p>
+                    <h3>— Madison B.</h3>
+                </blockquote>
+            </li>
 
-            <blockquote>
-                <p>literally always immaculate. ESPECIALLY WHEN IT'S WARM OH MY</p>
-                <footer>— mallie</footer>
-            </blockquote>
+            <li>
+                <blockquote>
+                    <p>This cookie is a staple </p>
+                    <h3>— Lena</h3>
+                </blockquote>
+            </li>
 
-            <blockquote>
-                <p>Cant go wrong with a classic chocolate chip cookie</p>
-                <footer>— Johnathon W.</footer>
-            </blockquote>
+            <li>
+                <blockquote>
+                    <p>literally always immaculate. </p>
+                    <h3>— mallie</h3>
+                </blockquote>
+            </li>
+        </ul>
 
-            <p>Tried this cookie? Download the Crumbl App to write a review!</p>
-            <button type="button">Download the App</button>
-        </section>
-
-        <section>
+        <section aria-label="made from these ingredients">
 
             <article>
                 <h2>Made from scratch with fresh ingredients every day</h2>
                 <p>A symphony of flour, sugar, butter, eggs, and chocolate, come together for our deliciously large
                     gourmet
                     desserts.</p>
-                    <img src="foto/optie1.png" alt="">
-                    <img src="foto/optie2.png" alt="">
-                    <img src="foto/optie3.png" alt="">
-                    <img src="foto/optie4.png" alt="">
-                    <img src="foto/optie5.png" alt="">
-                    <img src="foto/optie6.png" alt="">
-
+                    <ul aria-label="cookie ingredients list">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
             </article>
 
-            <section>
+            <section aria-labelledby="nutrition and allergergens">
                 <h3>Nutrition & Allergens</h3>
 
                 <p>Chilled cookies should be consumed or refrigerated within 2 hours</p>
 
                 <details>
-                    <summary>Nutrition Information</summary>
+                    <summary aria-label="view nutrition information">Nutrition Information</summary>
                     <p>Voedingsinformatie wordt hier weergegeven.</p>
                 </details>
 
                 <details>
-                    <summary>Allergy Information</summary>
+                    <summary aria-label="view allergy information">Allergy Information</summary>
                     <p>Allergeeninformatie wordt hier weergegeven.</p>
                 </details>
 
-                <button type="button">View Full Nutrition & Allergen Info</button>
+                <button type="button" aria-label="view full nutrition and allergen information">View Full Nutrition & Allergen Info</button>
             </section>
         </section>
 
     </main>
 
-    <footer></footer>
+    <footer>
+        <section>
+            <H3>Order now</H3>
+        </section>
+    </footer>
+
+    <script src="javascript.js"></script>
 </body>
 
 </html>
