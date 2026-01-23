@@ -223,6 +223,24 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Bevindingen
 
+Test 2 (uitgangspunten en bevindingen)
+Tijdens de tweede test heb ik specifiek gekeken naar de toegankelijkheid van afbeeldingen op de website. Hierbij lag de focus op het gebruik van alt-teksten en het onderscheid tussen informatieve en decoratieve afbeeldingen.
+
+Alt-attributen bij informatieve afbeeldingen
+Ik heb gecontroleerd of alle informatieve afbeeldingen een alt-attribuut hebben. Afbeeldingen van cookies, taarten en promoties brengen inhoudelijke informatie over en moeten daarom beschrijfbaar zijn voor screenreadergebruikers.Bij deze test bleek dat niet alle afbeeldingen een (goede) alt-tekst bevatten. In sommige gevallen ontbrak het alt-attribuut of was de beschrijving te algemeen, waardoor de informatie niet duidelijk wordt overgebracht.
+
+Decoratieve afbeeldingen
+Voor decoratieve afbeeldingen heb ik gekeken of deze een lege alt-waarde (alt="") gebruiken. Dit is belangrijk zodat screenreaders deze afbeeldingen overslaan en gebruikers niet onnodig afleiden.Tijdens test 2 bleek dat sommige decoratieve afbeeldingen nog steeds een alt-tekst hadden, terwijl ze geen inhoudelijke betekenis hebben. Dit kan verwarrend zijn voor gebruikers die afhankelijk zijn van een screenreader.
+
+Complexe afbeeldingen
+Bij complexe afbeeldingen, zoals banners of afbeeldingen waarin meerdere producten of boodschappen worden gecombineerd, heb ik gecontroleerd of er een tekstueel alternatief aanwezig is.In test 2 werd duidelijk dat deze informatie vaak alleen in de afbeelding zelf zichtbaar is en niet wordt herhaald in tekst. Hierdoor missen gebruikers die de afbeelding niet kunnen zien belangrijke context.
+
+Afbeeldingen met tekst
+Wanneer afbeeldingen tekst bevatten, zoals productnamen of acties, heb ik gecontroleerd of deze tekst ook wordt opgenomen in de alt-beschrijving.Uit de tweede test blijkt dat dit niet altijd het geval is. Tekst die zichtbaar is in afbeeldingen wordt soms niet of slechts gedeeltelijk benoemd in de alt-tekst, waardoor de informatie niet volledig toegankelijk is.
+
+Conclusie
+Op basis van de tweede test concludeer ik dat de afbeeldingen visueel goed zijn uitgewerkt, maar dat de toegankelijkheid nog verbeterd kan worden. Door consequenter gebruik te maken van beschrijvende alt-teksten, decoratieve afbeeldingen correct te markeren en tekst in afbeeldingen ook tekstueel aan te bieden, kan de website beter voldoen aan de WCAG-richtlijnen.
+
 ik heb voor mijn eigen sote gekeken hoe toegangkelijk het was 
 
 <img src="readme-images/checklist.png" width="375px" alt="checklist screenreader">
@@ -339,6 +357,4 @@ Nb. Vermeld de bronnen ook in je code.
 2. Hulp van studentassistenten David, Maya
 3. Eigen notities uit de les
 4. alle fotos en tekst in mijn site (https://crumblcookies.com)
-
-</details>
 </details>
