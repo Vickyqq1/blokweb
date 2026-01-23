@@ -153,6 +153,8 @@ a {
   color: black;
   border-radius: 0.3em;
   font-family: "FontBold", sans-serif;
+  display: inline-block;      /* zodat padding werkt */
+  padding: 0.5em 1em;
 }
 
 .pagina1 header nav li a:hover {
@@ -275,6 +277,11 @@ a {
   padding-top: 2em;
 }
 
+.pagina1 footer details ul {
+  padding-left: 2.3em;
+  padding-top: .5em;
+}
+
 .pagina1 footer details ul li {
   list-style: none;
 }
@@ -378,13 +385,13 @@ a {
   padding: 1em;
   display: flex;
   flex-direction: column;
-  position: fixed;
+  position: fixed; /*blijft op dezelfde plek*/
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 100vh; /*neemr hele lengte van de pagina in*/
   background-color: white;
-  transform: translateX(-100%);
-  transition: transform 0.4s ease;
+  transform: translateX(-100%); /*verstopt menu*/
+  transition: transform 0.4s ease; /*menu schuift terug in 0.4sec*/
   z-index: 100;
 }
 
@@ -406,6 +413,8 @@ a {
   color: black;
   border-radius: 0.3em;
   font-family: "FontBold", sans-serif;
+  display: inline-block;      /* zodat padding werkt */
+  padding: 0.5em 1em;
 }
 
 .pagina2 header nav li a:hover {
@@ -510,7 +519,6 @@ li[aria-label="hartslag"]:hover a {
     auto-fit,
     minmax(250px, 1fr)
   ); /*responsive voor groter scherm*/
-  gap: 1rem;
   list-style: none;
   text-decoration: none;
 }
@@ -612,4 +620,18 @@ main section:nth-of-type(2) section button {
   text-align: center;
   padding: 0.4em 0;
   border-radius: 1em;
+}
+
+.pagina2 details ul{
+  padding: 10em;
+}
+
+/*screenreader*/
+
+
+a:focus-visible {
+	outline:solid .15em red;
+	outline-offset: .2em;
+  border-radius: 2em;
+  border-style: dotted;
 }
